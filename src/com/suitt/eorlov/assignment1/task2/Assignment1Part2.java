@@ -3,7 +3,7 @@ package com.suitt.eorlov.assignment1.task2;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import static com.suitt.eorlov.assignment1.Constants.INVALID_INPUT_ERROR_TASK2;
+import static com.suitt.eorlov.assignment1.Constants.INVALID_INPUT_WRONG_INDEX;
 
 /**
  * An integer is specified that identifies the student number of your group (according to the journal).
@@ -32,7 +32,7 @@ public class Assignment1Part2 {
 
     private static void validateNumber(int number, int sizeOfMyGroup) throws Exception {
         if (number < 0 || number >= sizeOfMyGroup) {
-            throw new Exception(INVALID_INPUT_ERROR_TASK2);
+            throw new Exception(INVALID_INPUT_WRONG_INDEX);
         }
     }
 }

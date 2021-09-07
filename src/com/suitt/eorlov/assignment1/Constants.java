@@ -10,8 +10,16 @@ public interface Constants {
             "Sum of the first four digits of a given number is greater than 100";
     String UNSUCCESSFUL_OPERATION_TEXT_TASK1 =
             "Sum of the first four digits of a given number is not greater than 100";
-    String INVALID_INPUT_ERROR_TASK1 = "Your entered value is too small!";
+    String INVALID_INPUT_TOO_SMALL_ERROR = "Your entered value is too small!";
 
     /* Assignment1Part2 */
-    String INVALID_INPUT_ERROR_TASK2 = "There is no student for this index!";
+    String INVALID_INPUT_WRONG_INDEX = "There is no student for this index!";
+
+    /* Assignment1Part3 */
+    int MIN_FIVE_DIGIT_NUMBER = 10000;
+    String INVALID_INPUT_TOO_HIGH_ERROR = "Your entered value is too high!";
+    String SUCCESSFUL_OPERATION_TEXT_TASK3 =
+            "Third digit of a four-digit number is equal to first digit, the fourth - to first.";
+    String UNSUCCESSFUL_OPERATION_TEXT_TASK3 =
+            "Third digit of a four-digit number is not equal to first digit or the fourth is not equal to first.";
 }

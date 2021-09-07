@@ -29,7 +29,7 @@ public class Assignment1Part1 {
 
     private static void validateNumber(int number) throws Exception {
         if (number <= MAX_THREE_DIGIT_NUMBER) {
-            throw new Exception(INVALID_INPUT_ERROR_TASK1);
+            throw new Exception(INVALID_INPUT_TOO_SMALL_ERROR);
         }
     }
 
