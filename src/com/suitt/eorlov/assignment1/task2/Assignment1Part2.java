@@ -24,7 +24,7 @@ public class Assignment1Part2 {
     /**
      * Returns entered value from console
      */
-    private static int readNumber() throws Exception {
+    private static int readNumber() {
         System.out.print("Input number of student in journal: ");
         return new Scanner(System.in).nextInt() - 1;
     }
