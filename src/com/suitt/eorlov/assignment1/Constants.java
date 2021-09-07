@@ -22,4 +22,11 @@ public interface Constants {
             "Third digit of a four-digit number is equal to first digit, the fourth - to first.";
     String UNSUCCESSFUL_OPERATION_TEXT_TASK3 =
             "Third digit of a four-digit number is not equal to first digit or the fourth is not equal to first.";
+
+    /* Assignment1Part5 */
+    String SUCCESSFUL_OPERATION_TEXT_TASK5 =
+            "The number \"a\" appears in it more \"k\" times";
+    String UNSUCCESSFUL_OPERATION_TEXT_TASK5 =
+            "The number \"a\" doesn't appear in it more \"k\" times";
+
 }
