@@ -18,6 +18,19 @@ public class Assignment4Part1 {
         testTrain();
     }
 
+    public static String selectTrains(Train[] trains, String destination) {
+        List<Train> selectedTrains = Arrays.stream(trains)
+                .filter(x -> destination.equals(x.getDestination()))
+                .collect(Collectors.toList());
+
+        System.out.println("Selected trains - " + selectedTrains);
+        return ("Amount of trains that depart after 21: " +
+                (int) Arrays.stream(selectedTrains.toArray(new Train[0]))
+                        .filter(x -> x.getDepartureTime().getHour() >= 21).count()
+        );
+    }
+
+
     private static void testTrain() {
         //Testing of class train
         System.out.println("\n\n\n" + ANSI_CYAN_BACKGROUND + ANSI_BLACK + "------>Train<------" + ANSI_RESET);
@@ -37,7 +50,7 @@ public class Assignment4Part1 {
             System.out.println();
         }
 
-        selectTrains(trains, listOfCities.get(random.nextInt(listOfCities.size())));
+        System.out.println(selectTrains(trains, listOfCities.get(random.nextInt(listOfCities.size()))));
     }
 
     private static Train[] getArrayOfTrains(int size) {
@@ -56,15 +69,4 @@ public class Assignment4Part1 {
         return trains;
     }
 
-    private static void selectTrains(Train[] trains, String destination) {
-        List<Train> selectedTrains = Arrays.stream(trains)
-                .filter(x -> destination.equals(x.getDestination()))
-                .collect(Collectors.toList());
-
-        System.out.println("Selected trains - " + selectedTrains);
-        System.out.println("Amount of trains that depart after 21: " +
-                (int) Arrays.stream(selectedTrains.toArray(new Train[0]))
-                        .filter(x -> x.getDepartureTime().getHour() >= 21).count()
-        );
-    }
 }

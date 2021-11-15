@@ -49,6 +49,13 @@ public class Time {
         setSecond(second);
     }
 
+    public Time(String time) {
+        String[] times = time.split(":");
+        setHour(Integer.parseInt(times[0]));
+        setMinute(Integer.parseInt(times[1]));
+        setSecond(Integer.parseInt(times[2]));
+    }
+
     public Time() {
         hour = 0;
         minute = 0;
