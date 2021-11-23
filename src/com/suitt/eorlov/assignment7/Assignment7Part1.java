@@ -2,7 +2,6 @@ package com.suitt.eorlov.assignment7;
 
 import com.suitt.eorlov.assignment4.Assignment4Part1;
 import com.suitt.eorlov.assignment4.PassengerTrain;
-import com.suitt.eorlov.assignment4.Train;
 import com.suitt.eorlov.assignment4.utils.Time;
 
 import javax.swing.*;
